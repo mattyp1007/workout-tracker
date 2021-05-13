@@ -9,4 +9,12 @@ router.get("/exercise", (err, res) => {
   }
 })
 
+router.get("/stats", (err, res) => {
+  res.sendFile(path.join(__dirname, "../public/stats.html"));
+
+  if(err) {
+    console.log(err);
+  }
+})
+
 module.exports = router;

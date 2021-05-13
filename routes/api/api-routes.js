@@ -14,7 +14,6 @@ router.get("/workouts", (req, res) => {
 
 router.put("/workouts/:id", (req, res) => {
   const newExercise = req.body;
-  console.log(newExercise);
   // const workoutId = req.params.id;
   db.Workout.updateOne(
     { 
